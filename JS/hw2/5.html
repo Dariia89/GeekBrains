@@ -33,7 +33,7 @@
                     result = divide(arg1, arg2);
                     break;
             }
-            return alert(result);
+            return result;
         }
 
         function sumUp(a, b) {
@@ -56,7 +56,7 @@
         let b = +prompt("Введите второе число: ");
         let mathSign = prompt("Что вы хотите сделать: +, -, * или / ?");
 
-        mathOperation(a, b, mathSign);
+       alert(mathOperation(a, b, mathSign));
 
     </script>
 </body>

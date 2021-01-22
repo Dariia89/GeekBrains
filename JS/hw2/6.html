@@ -13,7 +13,7 @@
        /**
          *Зачисляем сумму на счет в банке
         *
-        * @param {number} sum
+        * @param {string} sum
         * @return {*} 
         */
         function giveResult(sum) {
@@ -38,10 +38,10 @@
                     rouble = "рублей";
                     break;
             }
-            return alert(`Ваша сумма в ${sum} ${rouble} успешно зачислена`);
+            return `Ваша сумма в ${sum} ${rouble} успешно зачислена`;
         }
 
-        giveResult(userSum);
+        alert(giveResult(userSum));
 
     </script>
 </body>
