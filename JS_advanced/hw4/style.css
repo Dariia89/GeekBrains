@@ -1,0 +1,53 @@
+fieldset {
+    width: 400px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color:floralwhite;
+    padding: 15px 20px;
+}
+ legend {
+     font-weight: 700;
+ }
+
+input {
+    margin-bottom: 6px;
+    padding: 3px 10px;
+    width: 200px;
+    height: 25px;
+    border: 1px solid #000; 
+    border-radius: 7px;
+    color: #000;
+}
+ 
+input:focus, textarea:focus {
+    outline: none;
+}
+
+textarea {
+    width: 370px;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding: 10px 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 7px;
+    border: 1px solid #000;
+    border-radius: 7px;
+    font-weight: 600;
+    width: 120px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.correct {
+    border: 1px solid green;
+}
+
+.wrong {    
+    border: 1px solid red;
+}
