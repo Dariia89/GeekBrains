@@ -59,17 +59,9 @@ const app = new Vue({
                 }
               })
         },
-        filter(value){
-            let regexp = new RegExp(value, 'i');
+        filter(){
+            let regexp = new RegExp(this.search, 'i');
             this.filtered = this.products.filter(el => regexp.test(el.product_name));
-            if (this.filtered.length === 0) {
-
-            }
-        },
-        notFoundProducts() {
-            if (this.filtered.length === 0) {
-                return this.noDataFound;
-            }
         },
         countSum(quantity, price) {
             return quantity *= price;
