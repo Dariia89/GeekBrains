@@ -15,8 +15,8 @@ class BurgerFeatures {
 
 class Hamburger {
     constructor(size, stuffing, topping) { 
-        this.size = new BurgerFeatures(this.getSize(size));
-        this.stuffing = new BurgerFeatures(this.getStuffing(stuffing));
+        this.size = new BurgerFeatures(this.getIngridients(size));
+        this.stuffing = new BurgerFeatures(this.getIngridients(stuffing));
         this.toppings = this.getToppings(topping);
         this.totalPrice = this.calculatePrice();
         this.totalCal = this.calculateCal();
@@ -29,11 +29,8 @@ class Hamburger {
     findAllToppings(name) {
         return [...document.querySelectorAll(`input[name=${name}]:checked`)];
     }
-    getSize(name) {              
+    getIngridients(name) {              
         return document.querySelector(`input[name=${name}]:checked`);
-    }
-    getStuffing(name) {          
-        return document.querySelector(`input[name=${name}]:checked`); 
     }
     calculatePrice() {      
         let totalPrice = this.size.price + this.stuffing.price;
