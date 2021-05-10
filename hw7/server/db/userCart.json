@@ -1,0 +1,20 @@
+{
+    "amount": 199,
+    "countGoods": 3,
+    "contents": [
+        {
+            "quantity": 1,
+            "id": 1,
+            "title": "MANGO HOODIE",
+            "price": 52,
+            "image": "img/pr_item_1.jpg"
+        },
+        {
+            "quantity": 1,
+            "id": 2,
+            "title": "MANGO BLAZER",
+            "price": 67,
+            "image": "img/pr_item_2.jpg"
+        }
+    ]
+}
